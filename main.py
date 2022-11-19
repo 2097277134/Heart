@@ -320,7 +320,7 @@ def show_images():
         save_path = os.path.join(output_dir, save_name)
         img = cv2.imread(save_path, cv2.IMREAD_ANYCOLOR)
         cv2.imshow("Img", img)
-        cv2.waitKey(25)
+        cv2.waitKey(5)
 
 
 def gen_images():
@@ -351,6 +351,6 @@ def gen_images():
 
 
 if __name__ == "__main__":
-    gen_images()
+    # gen_images()
     while True:
         show_images()
